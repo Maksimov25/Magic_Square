@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Magic Square</string>
+    <string name="desired_sum">Искомая сумма: %s</string>
+    <string name="magic_square">Это магический квадрат!</string>
+    <string name="not_magic_square">Это не магический квадрат</string>
+    <string name="mainText">Выберите режим игры:</string>
+    <string name="buttonText3x3">3x3</string>
+    <string name="buttonText4x4">4x4</string>
+    <string name="backButton">Вернуться</string>
+    <string name="newGameButton">Новая игра</string>
+    <string name="checkButton">Проверить</string>
+</resources>

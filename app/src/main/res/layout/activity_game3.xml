@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yankees_blue"
+    android:padding="16dp"
+    tools:context=".Game3Activity">
+
+
+    <LinearLayout
+        android:id="@+id/game_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@color/aqua"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/cell1"
+                style="@style/EditTextStyleRounded" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="#00AAAAAA" />
+
+            <EditText
+                android:id="@+id/cell2"
+                style="@style/EditTextStyleRounded" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="#00AAAAAA" />
+
+            <EditText
+                android:id="@+id/cell3"
+                style="@style/EditTextStyleRounded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/cell4"
+                style="@style/EditTextStyleRounded" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="#00AAAAAA" />
+
+            <EditText
+                android:id="@+id/cell5"
+                style="@style/EditTextStyleRounded" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="#00AAAAAA" />
+
+            <EditText
+                android:id="@+id/cell6"
+                style="@style/EditTextStyleRounded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/cell7"
+                style="@style/EditTextStyleRounded" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="#00AAAAAA" />
+
+            <EditText
+                android:id="@+id/cell8"
+                style="@style/EditTextStyleRounded" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="#00AAAAAA" />
+
+            <EditText
+                android:id="@+id/cell9"
+                style="@style/EditTextStyleRounded" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/validate"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border3x3"
+        android:text="@string/checkButton"
+        android:textColor="@color/gray"/>
+
+
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/back"
+        android:background="@drawable/button_border3x3"
+        android:onClick="onClick"
+        android:text="@string/newGameButton"
+        android:textColor="@color/gray"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_border3x3"
+        android:drawableTop="@android:drawable/ic_menu_revert"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/sumValue"
+        android:layout_width="395dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/gray"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+
+
+</RelativeLayout>
